@@ -1,26 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tech, Music & Gaming World</title>
+
+    <style>
+      
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #001f1f, #002626);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+	
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px #00ffcc;
+    transition: transform 0.3s;
+}
+
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: black;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+
+
+        h1 {
+            color: #00ffcc;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+.box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    transition: 0.3s;
+}
+
+        .box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #00ffcc;
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-btn {
+    background-color: transparent;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.glow-btn:hover {
+    background-color: #00ffcc;
+    color: black;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+
+    </style>
+
 </head>
 
 <body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#tech">Tech</a>
+    <a href="#music">Music</a>
+    <a href="#gaming">Gaming</a>
+</div>
 
-    <h1>Welcome to My World 🚀</h1>
+<div class="hero">
+    <h1>Welcome to My Tech Universe 🚀</h1>
+    <p>Exploring Technology, Music & Gaming</p>
+<a href="#tech">
+    <button class="glow-btn">Explore My World</button>
+</a>
 
-    <h2>About Me</h2>
-    <p>Hi! I'm a 9th grade student who loves tech, music, and gaming.</p>
+</div>
 
-    <h2>My Interests</h2>
 
-    <h3>💻 Tech</h3>
+    <div class="box" id="tech">
+    <h2>💻 Tech</h2>
+    <img src="tech.jpg">
     <p>I love learning about computers and coding.</p>
+</div>
 
-    <h3>🎵 Music</h3>
+    <div class="box" id="music">
+    <h2>🎵 Music</h2>
+    <img src="music.jpg">
     <p>I enjoy listening to music in my free time.</p>
+</div>
 
-    <h3>🎮 Gaming</h3>
+    <div class="box" id="gaming">
+    <h2>🎮 Gaming</h2>
+    <img src="gaming.png">
     <p>Gaming is one of my favorite hobbies!</p>
-
-</body>
+</div>
+ </body>
 </html>
